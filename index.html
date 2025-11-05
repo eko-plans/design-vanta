@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vanta Fog Background Example</title>
+  <title>Vanta Net Background Example</title>
   <style>
     body, html {
       margin: 0;
@@ -12,6 +12,7 @@
       width: 100%;
       overflow: hidden;
       font-family: Arial, sans-serif;
+      background-color: #000;
     }
 
     #your-element-selector {
@@ -30,27 +31,29 @@
 <body>
 
   <div id="your-element-selector">
+    Welcome to Eko Growth Team
   </div>
 
   <!-- Vanta.js dependencies -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 
-  <!-- Vanta Fog configuration -->
+  <!-- Vanta.NET configuration -->
   <script>
-    VANTA.FOG({
+    VANTA.NET({
       el: "#your-element-selector",
       mouseControls: true,
       touchControls: true,
       gyroControls: false,
       minHeight: 200.00,
       minWidth: 200.00,
-      highlightColor: 0xffffff,
-      midtoneColor: 0xffea00,
-      lowlightColor: 0x000000,
-      baseColor: 0x111111,
-      blurFactor: 0.6,
-      speed: 1.5
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xfffb3f,       // Yellow network lines
+      backgroundColor: 0x000000, // Black background
+      points: 12.00,
+      maxDistance: 20.00,
+      spacing: 15.00
     });
   </script>
 
